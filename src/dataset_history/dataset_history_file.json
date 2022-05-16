@@ -1,0 +1,1336 @@
+{
+    "__version__": 0.1,
+    "history_states": [
+        {
+            "entry_type": "DSSF saved",
+            "dataset_path": "/auto-ml/artifacts/production/datasets/88d0b5e135864a02a15d6aa6936b15bb/internal_dataset.hdf5",
+            "description": "Read DSSF and initialize Saver.",
+            "dssf_info": {
+                "Telco Churn Dataset": {
+                    "type": "table",
+                    "path": "telco_churn.csv",
+                    "sample_id_column": "customer_ID"
+                }
+            },
+            "current_nodes": [],
+            "node_type_dssf": {},
+            "node_types_probable": {},
+            "node_type": {},
+            "node_types_possible": {},
+            "node_type_default": {},
+            "removed_upload_nodes": [],
+            "generated_nodes": [],
+            "current_to_upload_name": {},
+            "not_categorical": [],
+            "not_datetime": [],
+            "datetime_format": {}
+        },
+        {
+            "entry_type": "nodes added",
+            "dataset_path": "/auto-ml/artifacts/production/datasets/88d0b5e135864a02a15d6aa6936b15bb/internal_dataset.hdf5",
+            "description": "Saving component Telco Churn Dataset.",
+            "dssf_info": {
+                "Telco Churn Dataset": {
+                    "type": "table",
+                    "path": "telco_churn.csv",
+                    "sample_id_column": "customer_ID",
+                    "nodes": [
+                        "gender",
+                        "senior_citizen",
+                        "has_partner",
+                        "has_dependents",
+                        "tenure_months",
+                        "has_phone_service",
+                        "has_multiple_lines",
+                        "type_of_internet_service",
+                        "has_online_security",
+                        "has_online_backup",
+                        "has_device_protection",
+                        "has_tech_support",
+                        "has_streaming_ts",
+                        "has_streaming_movies",
+                        "type_of_contract",
+                        "has_paperless_billing",
+                        "type_of_payment_method",
+                        "monthly_charges",
+                        "total_charges",
+                        "churned"
+                    ]
+                }
+            },
+            "current_nodes": [
+                "gender",
+                "senior_citizen",
+                "has_partner",
+                "has_dependents",
+                "tenure_months",
+                "has_phone_service",
+                "has_multiple_lines",
+                "type_of_internet_service",
+                "has_online_security",
+                "has_online_backup",
+                "has_device_protection",
+                "has_tech_support",
+                "has_streaming_ts",
+                "has_streaming_movies",
+                "type_of_contract",
+                "has_paperless_billing",
+                "type_of_payment_method",
+                "monthly_charges",
+                "total_charges",
+                "churned"
+            ],
+            "node_type_dssf": {},
+            "node_types_probable": {},
+            "node_type": {},
+            "node_types_possible": {},
+            "node_type_default": {},
+            "removed_upload_nodes": [],
+            "generated_nodes": [],
+            "current_to_upload_name": {
+                "gender": "gender",
+                "senior_citizen": "senior_citizen",
+                "has_partner": "has_partner",
+                "has_dependents": "has_dependents",
+                "tenure_months": "tenure_months",
+                "has_phone_service": "has_phone_service",
+                "has_multiple_lines": "has_multiple_lines",
+                "type_of_internet_service": "type_of_internet_service",
+                "has_online_security": "has_online_security",
+                "has_online_backup": "has_online_backup",
+                "has_device_protection": "has_device_protection",
+                "has_tech_support": "has_tech_support",
+                "has_streaming_ts": "has_streaming_ts",
+                "has_streaming_movies": "has_streaming_movies",
+                "type_of_contract": "type_of_contract",
+                "has_paperless_billing": "has_paperless_billing",
+                "type_of_payment_method": "type_of_payment_method",
+                "monthly_charges": "monthly_charges",
+                "total_charges": "total_charges",
+                "churned": "churned"
+            },
+            "not_categorical": [],
+            "not_datetime": [],
+            "datetime_format": {}
+        },
+        {
+            "entry_type": "heuristics saved",
+            "dataset_path": "/auto-ml/artifacts/production/datasets/88d0b5e135864a02a15d6aa6936b15bb/internal_dataset.hdf5",
+            "description": "Computing node type heuristics.",
+            "dssf_info": {
+                "Telco Churn Dataset": {
+                    "type": "table",
+                    "path": "telco_churn.csv",
+                    "sample_id_column": "customer_ID",
+                    "nodes": [
+                        "gender",
+                        "senior_citizen",
+                        "has_partner",
+                        "has_dependents",
+                        "tenure_months",
+                        "has_phone_service",
+                        "has_multiple_lines",
+                        "type_of_internet_service",
+                        "has_online_security",
+                        "has_online_backup",
+                        "has_device_protection",
+                        "has_tech_support",
+                        "has_streaming_ts",
+                        "has_streaming_movies",
+                        "type_of_contract",
+                        "has_paperless_billing",
+                        "type_of_payment_method",
+                        "monthly_charges",
+                        "total_charges",
+                        "churned"
+                    ]
+                }
+            },
+            "current_nodes": [
+                "gender",
+                "senior_citizen",
+                "has_partner",
+                "has_dependents",
+                "tenure_months",
+                "has_phone_service",
+                "has_multiple_lines",
+                "type_of_internet_service",
+                "has_online_security",
+                "has_online_backup",
+                "has_device_protection",
+                "has_tech_support",
+                "has_streaming_ts",
+                "has_streaming_movies",
+                "type_of_contract",
+                "has_paperless_billing",
+                "type_of_payment_method",
+                "monthly_charges",
+                "total_charges",
+                "churned"
+            ],
+            "node_type_dssf": {},
+            "node_types_probable": {
+                "churned": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "gender": [
+                    "categorical",
+                    "text"
+                ],
+                "has_dependents": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_device_protection": [
+                    "categorical",
+                    "text"
+                ],
+                "has_multiple_lines": [
+                    "categorical",
+                    "text"
+                ],
+                "has_online_backup": [
+                    "categorical",
+                    "text"
+                ],
+                "has_online_security": [
+                    "categorical",
+                    "text"
+                ],
+                "has_paperless_billing": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_partner": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_phone_service": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_streaming_movies": [
+                    "categorical",
+                    "text"
+                ],
+                "has_streaming_ts": [
+                    "categorical",
+                    "text"
+                ],
+                "has_tech_support": [
+                    "categorical",
+                    "text"
+                ],
+                "monthly_charges": [
+                    "numerical"
+                ],
+                "senior_citizen": [
+                    "bool",
+                    "categorical",
+                    "numerical"
+                ],
+                "tenure_months": [
+                    "numerical"
+                ],
+                "total_charges": [
+                    "numerical"
+                ],
+                "type_of_contract": [
+                    "categorical",
+                    "text"
+                ],
+                "type_of_internet_service": [
+                    "categorical",
+                    "text"
+                ],
+                "type_of_payment_method": [
+                    "categorical",
+                    "text"
+                ]
+            },
+            "node_type": {},
+            "node_types_possible": {
+                "churned": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "gender": [
+                    "categorical",
+                    "text"
+                ],
+                "has_dependents": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_device_protection": [
+                    "categorical",
+                    "text"
+                ],
+                "has_multiple_lines": [
+                    "categorical",
+                    "text"
+                ],
+                "has_online_backup": [
+                    "categorical",
+                    "text"
+                ],
+                "has_online_security": [
+                    "categorical",
+                    "text"
+                ],
+                "has_paperless_billing": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_partner": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_phone_service": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_streaming_movies": [
+                    "categorical",
+                    "text"
+                ],
+                "has_streaming_ts": [
+                    "categorical",
+                    "text"
+                ],
+                "has_tech_support": [
+                    "categorical",
+                    "text"
+                ],
+                "monthly_charges": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "senior_citizen": [
+                    "bool",
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "probability",
+                    "text"
+                ],
+                "tenure_months": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "total_charges": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "type_of_contract": [
+                    "categorical",
+                    "text"
+                ],
+                "type_of_internet_service": [
+                    "categorical",
+                    "text"
+                ],
+                "type_of_payment_method": [
+                    "categorical",
+                    "text"
+                ]
+            },
+            "node_type_default": {
+                "churned": "bool",
+                "gender": "categorical",
+                "has_dependents": "bool",
+                "has_device_protection": "categorical",
+                "has_multiple_lines": "categorical",
+                "has_online_backup": "categorical",
+                "has_online_security": "categorical",
+                "has_paperless_billing": "bool",
+                "has_partner": "bool",
+                "has_phone_service": "bool",
+                "has_streaming_movies": "categorical",
+                "has_streaming_ts": "categorical",
+                "has_tech_support": "categorical",
+                "monthly_charges": "numerical",
+                "senior_citizen": "bool",
+                "tenure_months": "numerical",
+                "total_charges": "numerical",
+                "type_of_contract": "categorical",
+                "type_of_internet_service": "categorical",
+                "type_of_payment_method": "categorical"
+            },
+            "removed_upload_nodes": [],
+            "generated_nodes": [],
+            "current_to_upload_name": {
+                "gender": "gender",
+                "senior_citizen": "senior_citizen",
+                "has_partner": "has_partner",
+                "has_dependents": "has_dependents",
+                "tenure_months": "tenure_months",
+                "has_phone_service": "has_phone_service",
+                "has_multiple_lines": "has_multiple_lines",
+                "type_of_internet_service": "type_of_internet_service",
+                "has_online_security": "has_online_security",
+                "has_online_backup": "has_online_backup",
+                "has_device_protection": "has_device_protection",
+                "has_tech_support": "has_tech_support",
+                "has_streaming_ts": "has_streaming_ts",
+                "has_streaming_movies": "has_streaming_movies",
+                "type_of_contract": "type_of_contract",
+                "has_paperless_billing": "has_paperless_billing",
+                "type_of_payment_method": "type_of_payment_method",
+                "monthly_charges": "monthly_charges",
+                "total_charges": "total_charges",
+                "churned": "churned"
+            },
+            "not_categorical": [],
+            "not_datetime": [],
+            "datetime_format": {}
+        },
+        {
+            "entry_type": "user input saved",
+            "dataset_path": "/auto-ml/artifacts/production/datasets/88d0b5e135864a02a15d6aa6936b15bb/internal_dataset.hdf5",
+            "description": "Mock user selection by setting selections to defaults.",
+            "dssf_info": {
+                "Telco Churn Dataset": {
+                    "type": "table",
+                    "path": "telco_churn.csv",
+                    "sample_id_column": "customer_ID",
+                    "nodes": [
+                        "gender",
+                        "senior_citizen",
+                        "has_partner",
+                        "has_dependents",
+                        "tenure_months",
+                        "has_phone_service",
+                        "has_multiple_lines",
+                        "type_of_internet_service",
+                        "has_online_security",
+                        "has_online_backup",
+                        "has_device_protection",
+                        "has_tech_support",
+                        "has_streaming_ts",
+                        "has_streaming_movies",
+                        "type_of_contract",
+                        "has_paperless_billing",
+                        "type_of_payment_method",
+                        "monthly_charges",
+                        "total_charges",
+                        "churned"
+                    ]
+                }
+            },
+            "current_nodes": [
+                "gender",
+                "senior_citizen",
+                "has_partner",
+                "has_dependents",
+                "tenure_months",
+                "has_phone_service",
+                "has_multiple_lines",
+                "type_of_internet_service",
+                "has_online_security",
+                "has_online_backup",
+                "has_device_protection",
+                "has_tech_support",
+                "has_streaming_ts",
+                "has_streaming_movies",
+                "type_of_contract",
+                "has_paperless_billing",
+                "type_of_payment_method",
+                "monthly_charges",
+                "total_charges",
+                "churned"
+            ],
+            "node_type_dssf": {},
+            "node_types_probable": {
+                "churned": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "gender": [
+                    "categorical",
+                    "text"
+                ],
+                "has_dependents": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_device_protection": [
+                    "categorical",
+                    "text"
+                ],
+                "has_multiple_lines": [
+                    "categorical",
+                    "text"
+                ],
+                "has_online_backup": [
+                    "categorical",
+                    "text"
+                ],
+                "has_online_security": [
+                    "categorical",
+                    "text"
+                ],
+                "has_paperless_billing": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_partner": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_phone_service": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_streaming_movies": [
+                    "categorical",
+                    "text"
+                ],
+                "has_streaming_ts": [
+                    "categorical",
+                    "text"
+                ],
+                "has_tech_support": [
+                    "categorical",
+                    "text"
+                ],
+                "monthly_charges": [
+                    "numerical"
+                ],
+                "senior_citizen": [
+                    "bool",
+                    "categorical",
+                    "numerical"
+                ],
+                "tenure_months": [
+                    "numerical"
+                ],
+                "total_charges": [
+                    "numerical"
+                ],
+                "type_of_contract": [
+                    "categorical",
+                    "text"
+                ],
+                "type_of_internet_service": [
+                    "categorical",
+                    "text"
+                ],
+                "type_of_payment_method": [
+                    "categorical",
+                    "text"
+                ]
+            },
+            "node_type": {
+                "churned": "bool",
+                "gender": "categorical",
+                "has_dependents": "bool",
+                "has_device_protection": "categorical",
+                "has_multiple_lines": "categorical",
+                "has_online_backup": "categorical",
+                "has_online_security": "categorical",
+                "has_paperless_billing": "bool",
+                "has_partner": "bool",
+                "has_phone_service": "bool",
+                "has_streaming_movies": "categorical",
+                "has_streaming_ts": "categorical",
+                "has_tech_support": "categorical",
+                "monthly_charges": "numerical",
+                "senior_citizen": "bool",
+                "tenure_months": "numerical",
+                "total_charges": "numerical",
+                "type_of_contract": "categorical",
+                "type_of_internet_service": "categorical",
+                "type_of_payment_method": "categorical"
+            },
+            "node_types_possible": {
+                "churned": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "gender": [
+                    "categorical",
+                    "text"
+                ],
+                "has_dependents": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_device_protection": [
+                    "categorical",
+                    "text"
+                ],
+                "has_multiple_lines": [
+                    "categorical",
+                    "text"
+                ],
+                "has_online_backup": [
+                    "categorical",
+                    "text"
+                ],
+                "has_online_security": [
+                    "categorical",
+                    "text"
+                ],
+                "has_paperless_billing": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_partner": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_phone_service": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_streaming_movies": [
+                    "categorical",
+                    "text"
+                ],
+                "has_streaming_ts": [
+                    "categorical",
+                    "text"
+                ],
+                "has_tech_support": [
+                    "categorical",
+                    "text"
+                ],
+                "monthly_charges": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "senior_citizen": [
+                    "bool",
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "probability",
+                    "text"
+                ],
+                "tenure_months": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "total_charges": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "type_of_contract": [
+                    "categorical",
+                    "text"
+                ],
+                "type_of_internet_service": [
+                    "categorical",
+                    "text"
+                ],
+                "type_of_payment_method": [
+                    "categorical",
+                    "text"
+                ]
+            },
+            "node_type_default": {
+                "churned": "bool",
+                "gender": "categorical",
+                "has_dependents": "bool",
+                "has_device_protection": "categorical",
+                "has_multiple_lines": "categorical",
+                "has_online_backup": "categorical",
+                "has_online_security": "categorical",
+                "has_paperless_billing": "bool",
+                "has_partner": "bool",
+                "has_phone_service": "bool",
+                "has_streaming_movies": "categorical",
+                "has_streaming_ts": "categorical",
+                "has_tech_support": "categorical",
+                "monthly_charges": "numerical",
+                "senior_citizen": "bool",
+                "tenure_months": "numerical",
+                "total_charges": "numerical",
+                "type_of_contract": "categorical",
+                "type_of_internet_service": "categorical",
+                "type_of_payment_method": "categorical"
+            },
+            "removed_upload_nodes": [],
+            "generated_nodes": [],
+            "current_to_upload_name": {
+                "gender": "gender",
+                "senior_citizen": "senior_citizen",
+                "has_partner": "has_partner",
+                "has_dependents": "has_dependents",
+                "tenure_months": "tenure_months",
+                "has_phone_service": "has_phone_service",
+                "has_multiple_lines": "has_multiple_lines",
+                "type_of_internet_service": "type_of_internet_service",
+                "has_online_security": "has_online_security",
+                "has_online_backup": "has_online_backup",
+                "has_device_protection": "has_device_protection",
+                "has_tech_support": "has_tech_support",
+                "has_streaming_ts": "has_streaming_ts",
+                "has_streaming_movies": "has_streaming_movies",
+                "type_of_contract": "type_of_contract",
+                "has_paperless_billing": "has_paperless_billing",
+                "type_of_payment_method": "type_of_payment_method",
+                "monthly_charges": "monthly_charges",
+                "total_charges": "total_charges",
+                "churned": "churned"
+            },
+            "not_categorical": [],
+            "not_datetime": [],
+            "datetime_format": {}
+        },
+        {
+            "entry_type": "nodes generated",
+            "dataset_path": "/auto-ml/artifacts/production/datasets/88d0b5e135864a02a15d6aa6936b15bb/internal_dataset.hdf5",
+            "description": "Generate datetime features.",
+            "dssf_info": {
+                "Telco Churn Dataset": {
+                    "type": "table",
+                    "path": "telco_churn.csv",
+                    "sample_id_column": "customer_ID",
+                    "nodes": [
+                        "gender",
+                        "senior_citizen",
+                        "has_partner",
+                        "has_dependents",
+                        "tenure_months",
+                        "has_phone_service",
+                        "has_multiple_lines",
+                        "type_of_internet_service",
+                        "has_online_security",
+                        "has_online_backup",
+                        "has_device_protection",
+                        "has_tech_support",
+                        "has_streaming_ts",
+                        "has_streaming_movies",
+                        "type_of_contract",
+                        "has_paperless_billing",
+                        "type_of_payment_method",
+                        "monthly_charges",
+                        "total_charges",
+                        "churned"
+                    ]
+                }
+            },
+            "current_nodes": [
+                "gender",
+                "senior_citizen",
+                "has_partner",
+                "has_dependents",
+                "tenure_months",
+                "has_phone_service",
+                "has_multiple_lines",
+                "type_of_internet_service",
+                "has_online_security",
+                "has_online_backup",
+                "has_device_protection",
+                "has_tech_support",
+                "has_streaming_ts",
+                "has_streaming_movies",
+                "type_of_contract",
+                "has_paperless_billing",
+                "type_of_payment_method",
+                "monthly_charges",
+                "total_charges",
+                "churned"
+            ],
+            "node_type_dssf": {},
+            "node_types_probable": {
+                "churned": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "gender": [
+                    "categorical",
+                    "text"
+                ],
+                "has_dependents": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_device_protection": [
+                    "categorical",
+                    "text"
+                ],
+                "has_multiple_lines": [
+                    "categorical",
+                    "text"
+                ],
+                "has_online_backup": [
+                    "categorical",
+                    "text"
+                ],
+                "has_online_security": [
+                    "categorical",
+                    "text"
+                ],
+                "has_paperless_billing": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_partner": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_phone_service": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_streaming_movies": [
+                    "categorical",
+                    "text"
+                ],
+                "has_streaming_ts": [
+                    "categorical",
+                    "text"
+                ],
+                "has_tech_support": [
+                    "categorical",
+                    "text"
+                ],
+                "monthly_charges": [
+                    "numerical"
+                ],
+                "senior_citizen": [
+                    "bool",
+                    "categorical",
+                    "numerical"
+                ],
+                "tenure_months": [
+                    "numerical"
+                ],
+                "total_charges": [
+                    "numerical"
+                ],
+                "type_of_contract": [
+                    "categorical",
+                    "text"
+                ],
+                "type_of_internet_service": [
+                    "categorical",
+                    "text"
+                ],
+                "type_of_payment_method": [
+                    "categorical",
+                    "text"
+                ]
+            },
+            "node_type": {
+                "churned": "bool",
+                "gender": "categorical",
+                "has_dependents": "bool",
+                "has_device_protection": "categorical",
+                "has_multiple_lines": "categorical",
+                "has_online_backup": "categorical",
+                "has_online_security": "categorical",
+                "has_paperless_billing": "bool",
+                "has_partner": "bool",
+                "has_phone_service": "bool",
+                "has_streaming_movies": "categorical",
+                "has_streaming_ts": "categorical",
+                "has_tech_support": "categorical",
+                "monthly_charges": "numerical",
+                "senior_citizen": "bool",
+                "tenure_months": "numerical",
+                "total_charges": "numerical",
+                "type_of_contract": "categorical",
+                "type_of_internet_service": "categorical",
+                "type_of_payment_method": "categorical"
+            },
+            "node_types_possible": {
+                "churned": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "gender": [
+                    "categorical",
+                    "text"
+                ],
+                "has_dependents": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_device_protection": [
+                    "categorical",
+                    "text"
+                ],
+                "has_multiple_lines": [
+                    "categorical",
+                    "text"
+                ],
+                "has_online_backup": [
+                    "categorical",
+                    "text"
+                ],
+                "has_online_security": [
+                    "categorical",
+                    "text"
+                ],
+                "has_paperless_billing": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_partner": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_phone_service": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_streaming_movies": [
+                    "categorical",
+                    "text"
+                ],
+                "has_streaming_ts": [
+                    "categorical",
+                    "text"
+                ],
+                "has_tech_support": [
+                    "categorical",
+                    "text"
+                ],
+                "monthly_charges": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "senior_citizen": [
+                    "bool",
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "probability",
+                    "text"
+                ],
+                "tenure_months": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "total_charges": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "type_of_contract": [
+                    "categorical",
+                    "text"
+                ],
+                "type_of_internet_service": [
+                    "categorical",
+                    "text"
+                ],
+                "type_of_payment_method": [
+                    "categorical",
+                    "text"
+                ]
+            },
+            "node_type_default": {
+                "churned": "bool",
+                "gender": "categorical",
+                "has_dependents": "bool",
+                "has_device_protection": "categorical",
+                "has_multiple_lines": "categorical",
+                "has_online_backup": "categorical",
+                "has_online_security": "categorical",
+                "has_paperless_billing": "bool",
+                "has_partner": "bool",
+                "has_phone_service": "bool",
+                "has_streaming_movies": "categorical",
+                "has_streaming_ts": "categorical",
+                "has_tech_support": "categorical",
+                "monthly_charges": "numerical",
+                "senior_citizen": "bool",
+                "tenure_months": "numerical",
+                "total_charges": "numerical",
+                "type_of_contract": "categorical",
+                "type_of_internet_service": "categorical",
+                "type_of_payment_method": "categorical"
+            },
+            "removed_upload_nodes": [],
+            "generated_nodes": [],
+            "current_to_upload_name": {
+                "gender": "gender",
+                "senior_citizen": "senior_citizen",
+                "has_partner": "has_partner",
+                "has_dependents": "has_dependents",
+                "tenure_months": "tenure_months",
+                "has_phone_service": "has_phone_service",
+                "has_multiple_lines": "has_multiple_lines",
+                "type_of_internet_service": "type_of_internet_service",
+                "has_online_security": "has_online_security",
+                "has_online_backup": "has_online_backup",
+                "has_device_protection": "has_device_protection",
+                "has_tech_support": "has_tech_support",
+                "has_streaming_ts": "has_streaming_ts",
+                "has_streaming_movies": "has_streaming_movies",
+                "type_of_contract": "type_of_contract",
+                "has_paperless_billing": "has_paperless_billing",
+                "type_of_payment_method": "type_of_payment_method",
+                "monthly_charges": "monthly_charges",
+                "total_charges": "total_charges",
+                "churned": "churned"
+            },
+            "not_categorical": [],
+            "not_datetime": [],
+            "datetime_format": {}
+        },
+        {
+            "entry_type": "nodes removed",
+            "dataset_path": "/auto-ml/artifacts/production/datasets/88d0b5e135864a02a15d6aa6936b15bb/internal_dataset.hdf5",
+            "description": "Remove datetime parent nodes.",
+            "dssf_info": {
+                "Telco Churn Dataset": {
+                    "type": "table",
+                    "path": "telco_churn.csv",
+                    "sample_id_column": "customer_ID",
+                    "nodes": [
+                        "gender",
+                        "senior_citizen",
+                        "has_partner",
+                        "has_dependents",
+                        "tenure_months",
+                        "has_phone_service",
+                        "has_multiple_lines",
+                        "type_of_internet_service",
+                        "has_online_security",
+                        "has_online_backup",
+                        "has_device_protection",
+                        "has_tech_support",
+                        "has_streaming_ts",
+                        "has_streaming_movies",
+                        "type_of_contract",
+                        "has_paperless_billing",
+                        "type_of_payment_method",
+                        "monthly_charges",
+                        "total_charges",
+                        "churned"
+                    ]
+                }
+            },
+            "current_nodes": [
+                "gender",
+                "senior_citizen",
+                "has_partner",
+                "has_dependents",
+                "tenure_months",
+                "has_phone_service",
+                "has_multiple_lines",
+                "type_of_internet_service",
+                "has_online_security",
+                "has_online_backup",
+                "has_device_protection",
+                "has_tech_support",
+                "has_streaming_ts",
+                "has_streaming_movies",
+                "type_of_contract",
+                "has_paperless_billing",
+                "type_of_payment_method",
+                "monthly_charges",
+                "total_charges",
+                "churned"
+            ],
+            "node_type_dssf": {},
+            "node_types_probable": {
+                "churned": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "gender": [
+                    "categorical",
+                    "text"
+                ],
+                "has_dependents": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_device_protection": [
+                    "categorical",
+                    "text"
+                ],
+                "has_multiple_lines": [
+                    "categorical",
+                    "text"
+                ],
+                "has_online_backup": [
+                    "categorical",
+                    "text"
+                ],
+                "has_online_security": [
+                    "categorical",
+                    "text"
+                ],
+                "has_paperless_billing": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_partner": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_phone_service": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_streaming_movies": [
+                    "categorical",
+                    "text"
+                ],
+                "has_streaming_ts": [
+                    "categorical",
+                    "text"
+                ],
+                "has_tech_support": [
+                    "categorical",
+                    "text"
+                ],
+                "monthly_charges": [
+                    "numerical"
+                ],
+                "senior_citizen": [
+                    "bool",
+                    "categorical",
+                    "numerical"
+                ],
+                "tenure_months": [
+                    "numerical"
+                ],
+                "total_charges": [
+                    "numerical"
+                ],
+                "type_of_contract": [
+                    "categorical",
+                    "text"
+                ],
+                "type_of_internet_service": [
+                    "categorical",
+                    "text"
+                ],
+                "type_of_payment_method": [
+                    "categorical",
+                    "text"
+                ]
+            },
+            "node_type": {
+                "churned": "bool",
+                "gender": "categorical",
+                "has_dependents": "bool",
+                "has_device_protection": "categorical",
+                "has_multiple_lines": "categorical",
+                "has_online_backup": "categorical",
+                "has_online_security": "categorical",
+                "has_paperless_billing": "bool",
+                "has_partner": "bool",
+                "has_phone_service": "bool",
+                "has_streaming_movies": "categorical",
+                "has_streaming_ts": "categorical",
+                "has_tech_support": "categorical",
+                "monthly_charges": "numerical",
+                "senior_citizen": "bool",
+                "tenure_months": "numerical",
+                "total_charges": "numerical",
+                "type_of_contract": "categorical",
+                "type_of_internet_service": "categorical",
+                "type_of_payment_method": "categorical"
+            },
+            "node_types_possible": {
+                "churned": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "gender": [
+                    "categorical",
+                    "text"
+                ],
+                "has_dependents": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_device_protection": [
+                    "categorical",
+                    "text"
+                ],
+                "has_multiple_lines": [
+                    "categorical",
+                    "text"
+                ],
+                "has_online_backup": [
+                    "categorical",
+                    "text"
+                ],
+                "has_online_security": [
+                    "categorical",
+                    "text"
+                ],
+                "has_paperless_billing": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_partner": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_phone_service": [
+                    "bool",
+                    "categorical",
+                    "text"
+                ],
+                "has_streaming_movies": [
+                    "categorical",
+                    "text"
+                ],
+                "has_streaming_ts": [
+                    "categorical",
+                    "text"
+                ],
+                "has_tech_support": [
+                    "categorical",
+                    "text"
+                ],
+                "monthly_charges": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "senior_citizen": [
+                    "bool",
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "probability",
+                    "text"
+                ],
+                "tenure_months": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "total_charges": [
+                    "categorical",
+                    "datetime",
+                    "numerical",
+                    "text"
+                ],
+                "type_of_contract": [
+                    "categorical",
+                    "text"
+                ],
+                "type_of_internet_service": [
+                    "categorical",
+                    "text"
+                ],
+                "type_of_payment_method": [
+                    "categorical",
+                    "text"
+                ]
+            },
+            "node_type_default": {
+                "churned": "bool",
+                "gender": "categorical",
+                "has_dependents": "bool",
+                "has_device_protection": "categorical",
+                "has_multiple_lines": "categorical",
+                "has_online_backup": "categorical",
+                "has_online_security": "categorical",
+                "has_paperless_billing": "bool",
+                "has_partner": "bool",
+                "has_phone_service": "bool",
+                "has_streaming_movies": "categorical",
+                "has_streaming_ts": "categorical",
+                "has_tech_support": "categorical",
+                "monthly_charges": "numerical",
+                "senior_citizen": "bool",
+                "tenure_months": "numerical",
+                "total_charges": "numerical",
+                "type_of_contract": "categorical",
+                "type_of_internet_service": "categorical",
+                "type_of_payment_method": "categorical"
+            },
+            "removed_upload_nodes": [],
+            "generated_nodes": [],
+            "current_to_upload_name": {
+                "gender": "gender",
+                "senior_citizen": "senior_citizen",
+                "has_partner": "has_partner",
+                "has_dependents": "has_dependents",
+                "tenure_months": "tenure_months",
+                "has_phone_service": "has_phone_service",
+                "has_multiple_lines": "has_multiple_lines",
+                "type_of_internet_service": "type_of_internet_service",
+                "has_online_security": "has_online_security",
+                "has_online_backup": "has_online_backup",
+                "has_device_protection": "has_device_protection",
+                "has_tech_support": "has_tech_support",
+                "has_streaming_ts": "has_streaming_ts",
+                "has_streaming_movies": "has_streaming_movies",
+                "type_of_contract": "type_of_contract",
+                "has_paperless_billing": "has_paperless_billing",
+                "type_of_payment_method": "type_of_payment_method",
+                "monthly_charges": "monthly_charges",
+                "total_charges": "total_charges",
+                "churned": "churned"
+            },
+            "not_categorical": [],
+            "not_datetime": [],
+            "datetime_format": {}
+        }
+    ]
+}
